@@ -459,7 +459,6 @@ body.dark-theme {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: fade-in-up 1s ease-out;
 }
 
 .home__perfil {
@@ -467,7 +466,6 @@ body.dark-theme {
     justify-self: center;
     margin-top: -5rem;
     /* Further shift upwards as requested */
-    animation: fade-in-up 1.2s ease-out;
 }
 
 .home__image {
@@ -476,18 +474,7 @@ body.dark-theme {
     position: relative;
 }
 
-.home__blob {
-    position: absolute;
-    width: 280px;
-    height: 280px;
-    background: linear-gradient(180deg,
-            hsla(217, 91%, 60%, .4) 0%,
-            hsla(217, 91%, 60%, 0) 100%);
-    top: -15px;
-    left: -15px;
-    filter: blur(40px);
-    z-index: 1;
-    border-radius: 50%;
+    /* Blob removed to fix blur perception */
 }
 
 .home__img {
@@ -525,17 +512,7 @@ body.dark-theme {
 
 
 
-@keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .home__perfil .geometric-box {
     top: 2.5rem;
