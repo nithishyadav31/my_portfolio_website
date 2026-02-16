@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/2234/2234489.png">
+
+    <!--=============== REMIXICONS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="portfolio.css">
+
+    <title>Nithish Portfolio</title>`
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav containers">
+            <div class="nav__menu" id="nav-menu">
+                <span class="nav__title">Menu</span>
+
+                <h3 class="nav__name">Nithish</h3>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">Education</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link nav__link-button">Contact Me</a>
+                    </li>
+                </ul>
+                <!--close button-->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <div class="nav__buttons">
+
+                <!--Theme Button-->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+                <!-- Toggle button-->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-4-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <h1 class="home__name">
+                    Chinnala Nithish Yadav
+                </h1>
+
+                <div class="home__perfil">
+                    <div class="home__image">
+                        <div class="home__blob"></div>
+                        <img src="./src/nithish_dp1.png" alt="image" class="home__img">
+                        <div class="home__shadow">
+                        </div>
+
+
+
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/chinnala-nithish-yadav/" target="_blank"
+                                class="home__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                            <a href="https://github.com/nithishyadav31" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home__info">
+                    <h1>Hi, It's <span>Chinnala Nithish</span></h1>
+                    <h3 class="text-animation"> I'm a <span></span></h3>
+
+                    <a href="#about" class="home__scroll">
+                        <div class="home__scroll-box">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </div>
+
+                        <span class="home__scroll-text">Scroll Down</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <h2 class="section__title-1">
+                    <span>About Me</span>
+                </h2>
+
+                <div class="about__info">
+                    <p class="about__description">
+                        As an aspiring <b>Data Scientist and Developer</b>, I specialize in transforming raw data into
+                        intelligent solutions. My experience ranges from building <b>AI-powered nutrition
+                            platforms</b> and Multi-CNN models for <b>satellite imagery</b> to architecting robust
+                        <b>SQL Data Warehouses</b>. I thrive on using tools like <b>Tableau and Python</b> to solve
+                        complex problems and deliver actionable insights.
+                    </p>
+
+                    <div class="about__button">
+                        <a href="#contact" class="button">
+                            <i class="ri-send-plane-line"></i> Contact Me
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/chinnala-nithish-yadav/" target="_blank"
+                            class="button__ghost">
+                            <i class="ri-linkedin-box-line"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PROJECTS ====================-->
+        <section class="projects section" id="projects">
+            <h2 class="section__title-1">
+                <span>Projects.</span>
+            </h2>
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="./src/project1_ss.png" alt="image" class="projects__img">
+                        <a href="#" target="_blank" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Deep Learning / Remote Sensing</h3>
+                        <h2 class="projects__title">Land Cover Classification From time series Satellite image</h2>
+
+                        <p class="projects__description">
+                            <b>Tech Stack: Python, Multi-CNN, Landsat-8, Remote Sensing</b><br>
+                            This comparative study evaluates Multi-CNN models against traditional classification methods
+                            for multi-spectral temporal Landsat-8 satellite data, balancing runtime efficiency and
+                            accuracy for environmental monitoring.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/nithishyadav31/Land_cover_classification.git" target="_blank"
+                            class="projects__link">
+                            <i class="ri-github-line"></i> GitHub Repository
+                        </a>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="./src/project2_ss.png" alt="image" class="projects__img">
+                        <a href="https://github.com/nithishyadav31/nutriverse-AI.git" target="_blank"
+                            class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">AI / Health Tech</h3>
+                        <h2 class="projects__title">AI Powered Nutrition</h2>
+
+                        <p class="projects__description">
+                            <b>Tech Stack: Python, Generative AI, Streamlit</b><br>
+                            Leveraging AI to provide instant, accurate nutrition analysis and personalized meal plans.
+                            Integrated advanced LLMs to analyze dietary habits and goals for optimized health outcomes.
+                            Utilizes advanced image recognition and NLP to simplify calorie tracking and dietary
+                            management.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/nithishyadav31/nutriverse-AI.git" target="_blank"
+                            class="projects__link">
+                            <i class="ri-github-line"></i> GitHub Repository
+                        </a>
+                    </div>
+                </article>
+
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="./src/project3_ss.png" alt="image" class="projects__img">
+                        <a href="https://github.com/nithishyadav31/sql-data-warehouse-project-.git" target="_blank"
+                            class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Data Engineering / Analytics</h3>
+                        <h2 class="projects__title">Data Warehouse and Analytics Project</h2>
+
+                        <p class="projects__description">
+                            <b>Tech Stack: SQL Server, T-SQL, ETL (Bronze-Silver-Gold)</b><br>
+                            Developing a modern SQL Server data warehouse using a layered architecture (Bronze, Silver,
+                            Gold) and Star Schema to consolidate sales data for analytical reporting.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/nithishyadav31/sql-data-warehouse-project-.git" target="_blank"
+                            class="projects__link">
+                            <i class="ri-github-line"></i> GitHub Repository
+                        </a>
+                    </div>
+                </article>
+
+
+
+
+
+
+
+
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="./src/project4_ss.gif" alt="image" class="projects__img">
+                        <a href="https://github.com/nithishyadav31/excel_project_data_analysis.git" target="_blank"
+                            class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Data Analysis / Visualization</h3>
+                        <h2 class="projects__title">Excel Project Data Analysis</h2>
+
+                        <p class="projects__description">
+                            <b>Tech Stack: Excel (Charts, Formulas, Data Validation)</b><br>
+                            Created a comprehensive Data Jobs Salary Dashboard in Excel to help job seekers analyze
+                            real-world 2023 salary data. Leveraged advanced Excel features including pivot charts,
+                            complex formulas, and data validation to provide insights into job titles, locations, and
+                            essential skills.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://github.com/nithishyadav31/excel_project_data_analysis.git" target="_blank"
+                            class="projects__link">
+                            <i class="ri-github-line"></i> GitHub Repository
+                        </a>
+                    </div>
+                </article>
+                <article class="projects__card">
+                    <div class="projects__image">
+                        <img src="./src/project5_ss.png" alt="image" class="projects__img">
+                        <a href="https://public.tableau.com/app/profile/nithish.yadav2553/viz/HumanResourceDashboardoverview_17577449745790/HRDashboard"
+                            target="_blank" class="projects__button button">
+                            <i class="ri-arrow-right-up-line"></i>
+                        </a>
+                    </div>
+
+                    <div class="projects__content">
+                        <h3 class="projects__subtitle">Data Visualization / HR Tech</h3>
+                        <h2 class="projects__title">HR Analytics Dashboard</h2>
+
+                        <p class="projects__description">
+                            <b>Tech Stack: Tableau, Data Visualization, HR Analytics</b><br>
+                            Transforming HR data into actionable insights with Tableau. Provides high-level
+                            summaries and detailed employee records to support HR manager decision-making.
+                        </p>
+                    </div>
+
+                    <div class="projects__buttons">
+                        <a href="https://public.tableau.com/app/profile/nithish.yadav2553/viz/HumanResourceDashboardoverview_17577449745790/HRDashboard"
+                            target="_blank" class="projects__link">
+                            <i class="ri-external-link-line"></i> Live Dashboard
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!--=========Education============-->
+        <section class="education" id="education">
+            <h2 class="section__title-1">
+                <span>Education</span>
+            </h2>
+
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2026
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Bachelor of Technology</h3>
+                        <p>Pursuing</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Diploma</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020
+                    </div>
+                    <div class="timeline-content">
+                        <h3>SSC (Schooling)</h3>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section__title-1">
+                <span>Skills</span>
+            </h2>
+
+            <div class="skills__container container grid">
+                <!-- Programming Languages -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-braces-line"></i> Programming Languages
+                    </h3>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__python"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SQL</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__sql"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Tools -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-database-2-line"></i> Data Tools
+                    </h3>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Power BI / Tableau</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__viz"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Excel</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__excel"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skills__content">
+                    <h3 class="skills__title">
+                        <i class="ri-code-s-slash-line"></i> Web Technologies
+                    </h3>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML & CSS</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__htmlcss"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__number">75%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__js"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-------services-->
+        <section class="services section" id="services">
+            <h2 class="section__title-2">
+                <span>Services</span>
+            </h2>
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <div class="services__border">
+                        <div class="services__content">
+                            <div class="services__icon">
+                                <div class="services__box">
+                                    <i class="ri-layout-4-line"></i>
+                                </div>
+                                <h2 class="services__title">Data Analysis</h2>
+                                <p class="services__description">
+                                    Transforming raw data into meaningful insights using tools like Excel, SQL, and
+                                    Python.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__border">
+                        <div class="services__content">
+                            <div class="services__icon">
+                                <div class="services__box">
+                                    <i class="ri-code-box-line"></i>
+                                </div>
+
+                                <h2 class="services__title">Web Development</h2>
+
+                                <p class="services__description">
+                                    Building responsive and user-friendly websites using modern web technologies.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="services__card">
+                    <div class="services__border">
+
+                        <div class="services__content">
+                            <div class="services__icon">
+                                <div class="services__box">
+                                    <i class="ri-terminal-box-line"></i>
+                                </div>
+                                <h2 class="services__title">Data Science</h2>
+                                <p class="services__description">
+                                    Implementing machine learning algorithms and predictive models to solve complex
+                                    problems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!--==================== CONTACT ====================-->
+        <section class="contact section" id="contact">
+            <div class="contact__container grid">
+                <div class="contact__data">
+                    <h2 class="section__title-2">
+                        <span>Contact Me.</span>
+                    </h2>
+                    <p class="contact__description-1">
+                        I will read all emails. Send me any
+                        message you want and I'll get back to you.
+                    </p>
+                    <p class="contact__description-2">
+                        I need your <b>Name</b> and <b>Email Address</b>, but
+                        you won't receive anything other than your reply.
+                    </p>
+                    <div class="geometric-box"></div>
+                </div>
+
+                <div class="contact__mail">
+                    <h2 class="contact__title">
+                        Send Me A Message
+                    </h2>
+
+                    <form action="" class="contact__form" id="contact-form">
+                        <div class="contact__group">
+                            <div class="contact__box">
+                                <input type="text" name="user_name" class="contact__input" id="name" required
+                                    placeholder="First Name">
+                                <label for="name" class="contact__label">First Name</label>
+                            </div>
+
+                            <div class="contact__box">
+                                <input type="email" name="user_email" class="contact__input" id="email" required
+                                    placeholder="Email Address">
+                                <label for="email" class="contact__label">Email Address</Address></label>
+                            </div>
+                        </div>
+
+                        <div class="contact__box">
+                            <input type="text" name="user_subject" class="contact__input" id="subject" required
+                                placeholder="Subject">
+                            <label for="subject" class="contact__label">Subject</label>
+                        </div>
+
+                        <div class="contact__box contact__area">
+                            <textarea name="user_message" id="message" class="contact__input" required
+                                placeholder="Message"></textarea>
+                            <label for="message" class="contact__label">Message</label>
+                        </div>
+
+                        <p class="contact__message" id="contact-message"></p>
+
+                        <button type="submit" class="contact__button button">
+                            <i class="ri-send-plane-line"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <div class="contact__social">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iNjgiIHZpZXdCb3g9IjAgMCA1MyA2OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuMDAwMDEgMC45OTk5ODhDNi45MTMwNCAxLjk4NTUxIDI2LjYwNjEgMTAuOTM1OSAyNy4wNDE3IDIwLjA4MzNDMjcuMjIzIDIzLjg4OTYgMjUuMzE2IDI5LjIxNzIgMjIuMTY2NyAzMS42NjY2QzE1LjQwMzYgMzYuOTI2NyA0LjE3ODE1IDI5LjkwODggMTMuNSAyMy41QzE4LjcyNzkgMTkuOTA1OCAyNi4xOTc1IDIyLjgyMTEgMzEuNDU4MyAyNC45NTgzQzM4LjUgMjguNSAzOC41IDI4LjUgNDMuMzMzNCAzNS4yNUM0OSA0NC41IDQ4LjYxMTkgNTcuODA1OSA0Ny41IDU3LjI1IiBzdHJva2U9IiNGMkYyRjIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CjxwYXRoIGQ9Ik00OS43NSA2NEM0OC42MjYxIDYzLjM4ODEgNDAuMTcyOSA1OC40MjYxIDQxLjEyNSA1OS4xNjY2QzQyLjM3MTIgNjAuMTM2IDQzLjc1NzEgNjEuMDA3MSA0NC44NzUgNjIuMTI1QzQ2LjE5NzYgNjMuNDQ3NiA0Ny44MzMxIDY0LjQxNjQgNDkgNjUuODc1QzUwLjAyMzkgNjcuMTU0OSA1MiA1OC43NjEyIDUyIDU3LjI1IiBzdHJva2U9IiNGMkYyRjIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="
+                        alt="" class="contact__social-arrow">
+
+                    <div class="contact__social-data">
+                        <div>
+                            <p class="contact__social-description-1">
+                                Does not send emails
+                            </p>
+
+                            <p class="contact__social-description-2">
+                                write me on my social networks
+                            </p>
+                        </div>
+
+                        <div class="contact__social-links">
+                            <a href="https://www.linkedin.com/in/chinnala-nithish-yadav/" target="_blank"
+                                class="contact__social-link">
+
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+
+                            <a href="https://github.com/nithishyadav31" target="_blank" class="contact__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <ul class="footer__links">
+                <li>
+                    <a href="#about" class="footer__link">About</a>
+                </li>
+                <li>
+                    <a href="#services" class="footer__link">Services</a>
+                </li>
+                <li>
+                    <a href="#projects" class="footer__link">Projects</a>
+                </li>
+            </ul>
+
+            <span class="footer__copy">
+                &#169; All Rights Reserved By
+                <a href="#">Chinnala Nithish Yadav</a>
+            </span>
+        </div>
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a> <!--=============== SCROLLREVEAL ===============-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="main.js"></script>
+</body>
+
+</html>
