@@ -99,6 +99,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 /*=============== SCROLL BAR ===============*/
@@ -134,18 +135,20 @@ img {
 body.dark-theme {
     --first-color: hsl(186, 78%, 53%);
     /* Cyan #22D3EE */
-    --black-color: hsl(220, 9%, 92%);
-    /* Text #E5E7EB */
+    --black-color: hsl(222, 47%, 11%);
+    /* Keep primary dark for specific elements */
     --black-color-light: hsl(238, 83%, 66%);
     /* Secondary Accent #6366F1 */
     --title-color: hsl(220, 9%, 92%);
     /* Text #E5E7EB */
-    --text-color: hsl(220, 9%, 92%);
-    /* Text #E5E7EB */
+    --text-color: hsl(220, 9%, 80%);
+    /* Slightly dimmer text for body */
     --body-color: hsl(223, 47%, 8%);
     /* Background #0B1120 */
     --container-color: hsl(220, 39%, 11%);
     /* Card Background #111827 */
+    --white-color: hsl(220, 9%, 92%);
+    /* In dark mode, 'white' should be light grey text */
 }
 
 /*========== 
@@ -191,7 +194,7 @@ body.dark-theme {
     color: var(--white-color);
 }
 
-.dark-theme:is(.contact__mail, .contact__input, .contact_-label) {
+.dark-theme:is(.contact__mail, .contact__input, .contact__label) {
     background-color: var(--container-color);
 }
 
@@ -471,7 +474,7 @@ body.dark-theme {
 
 .home__image {
     width: 280px;
-    height: 280px;
+    height: 380px;
     position: relative;
 }
 
@@ -982,7 +985,7 @@ body.dark-theme {
 .timeline-date {
     font-size: 20px;
     font-weight: 800;
-    color: rgb(5, 5, 5);
+    color: var(--title-color);
     margin: 6px 0 15px;
 }
 
@@ -1004,13 +1007,13 @@ body.dark-theme {
 
 .timeline-content h3 {
     font-size: 20px;
-    color: black;
+    color: var(--title-color);
     margin: 0 0 10px;
     font-weight: 500;
 }
 
 .timeline-content p {
-    color: black;
+    color: var(--text-color);
     font-size: 16px;
     font-weight: 300;
     line-height: 22px;
@@ -1149,7 +1152,7 @@ body.dark-theme {
     display: inline-flex;
     align-items: center;
     column-gap: .5rem;
-    background-color: var(--black-color);
+    background-color: var(--black-color-light);
     color: var(--white-color);
     padding: .75rem 1.25rem;
     border-radius: .5rem;
@@ -1412,7 +1415,7 @@ body.dark-theme {
 }
 
 .footer__link:hover {
-    color: var(--text-color-light);
+    color: var(--first-color);
 }
 
 .footer__copy {
@@ -1422,7 +1425,7 @@ body.dark-theme {
 }
 
 .footer__copy a {
-    color: var(--white-color);
+    color: var(--first-color);
     font-weight: var(--font-medium);
 }
 
